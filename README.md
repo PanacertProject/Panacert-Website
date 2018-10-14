@@ -1,2 +1,2 @@
 # Panacea-Website
-Panacea website frontend &amp; backend
+Panacea website made with vue.js and express.js/node.js
