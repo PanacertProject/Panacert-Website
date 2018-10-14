@@ -14,7 +14,10 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "joi": "^14.0.0",
+    "morgan": "^1.9.1",
+    "sequelize": "^4.39.0",
+    "sqlite3": "^4.0.2"
   },
   "devDependencies": {
     "eslint": "^5.7.0",
