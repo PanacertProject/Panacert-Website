@@ -5,9 +5,7 @@
         <v-card>
           <v-card-text>
             <v-container>
-              <v-form 
-                ref="form" 
-                autocomplete="off">
+              <v-form ref="form">
                 <div class="error" v-html="error"/>
                 <br>
                 <v-layout row>
@@ -32,21 +30,11 @@
                 </v-layout>
                 <v-layout row>
                   <v-flex xs12>
-                    <v-text-field
-                      label="Confirm Password"
-                      v-model="ConfirmPassword"
-                      type="password"
-                      :rules="[comparePasswords]"
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
                     <v-btn
                       class="indigo darken-1"
                       flat
-                      @click="register">
-                      Register
+                      @click="login">
+                      Login
                     </v-btn>
                   </v-flex>
                 </v-layout>
@@ -77,16 +65,11 @@ export default {
       error: null
     }
   },
-  computed: {
-    comparePasswords () {
-      return this.password !== this.ConfirmPassword ? 'Passwords do not match' : true
-    }
-  },
   methods: {
-    async register () {
+    async login () {
       if (this.$refs.form.validate()) {
         try {
-          await AuthenticationService.register({
+          await AuthenticationService.login({
             email: this.email,
             password: this.password
           })
