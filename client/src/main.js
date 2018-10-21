@@ -10,11 +10,22 @@ import store from '@/store/store'
 
 Vue.config.productionTip = false
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    'primary': '#FFBF00',
+    'secondary': '#424242',
+    'accent': '#82B1FF',
+    'error': '#FF5252',
+    'info': '#2196F3',
+    'success': '#4CAF50',
+    'warning': '#FFC107'
+  }
+})
 
 sync(store, router)
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,

@@ -1,18 +1,16 @@
 <template>
   <v-content>
     <section>
-      <v-parallax src="./static/img/parallax1.png" height="600">
+      <v-parallax src="./static/img/santiagopic.jpg" height="600">
         <v-layout
           column
           align-center
           justify-center
           class="white--text">
-          <!-- <img src="./static/img/logo.png" alt="Vuetify.js" height="200"> -->
-          <h1 class="white--text mb-2 display-1 text-xs-center">Panacea Certificates</h1>
-          <div class="subheading mb-3 text-xs-center">Powered by Pizza</div>
+          <img src="static/img/logo2.png" height="120">
+          <div class="subheading mb-3 text-xs-center">Powered by Blockcerts</div>
           <v-btn
-            class="indigo darken-1 mt-5"
-            dark
+            class='primary'
             large
             @click="navigateTo({ name: 'register' })">
             Get Started
@@ -41,7 +39,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="indigo--text text--lighten-2">share</v-icon>
+                    <v-icon x-large class="primary--text">share</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Share with Anyone</div>
@@ -56,7 +54,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="indigo--text text--lighten-2">flash_on</v-icon>
+                    <v-icon x-large class="primary--text">flash_on</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline">Fast Validation</div>
@@ -71,7 +69,7 @@
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
-                    <v-icon x-large class="indigo--text text--lighten-2">build</v-icon>
+                    <v-icon x-large class="primary--text">build</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Completely Open Sourced</div>
@@ -90,12 +88,12 @@
     </section>
 
     <section>
-      <v-parallax src="./static/img/parallax2.jpg" height="380">
+      <v-parallax src="./static/img/santiagopic.jpg" height="380">
         <v-layout column align-center justify-center>
           <div class="headline white--text mb-3 text-xs-center">Certificate management has never been easier</div>
           <em>Get your digital certificates today</em>
           <v-btn
-            class="indigo darken-1 mt-5"
+            class="primary"
             dark
             large
             @click="navigateTo({ name: 'register'})">
@@ -131,7 +129,7 @@
               <v-list class="transparent">
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="indigo--text text--lighten-2">phone</v-icon>
+                    <v-icon class="primary--text">phone</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>777-867-5309</v-list-tile-title>
@@ -139,7 +137,7 @@
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="indigo--text text--lighten-2">place</v-icon>
+                    <v-icon class="primary--text">place</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>Chicago, US</v-list-tile-title>
@@ -147,7 +145,7 @@
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="indigo--text text--lighten-2">email</v-icon>
+                    <v-icon class="primary--text">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>john@panacea.com</v-list-tile-title>
@@ -160,7 +158,7 @@
       </v-container>
     </section>
 
-    <v-footer class="indigo darken-1">
+    <v-footer class="primary darken-1">
       <v-layout row wrap align-center>
         <v-flex xs12>
           <div class="white--text ml-3">

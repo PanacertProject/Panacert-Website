@@ -1,4 +1,5 @@
 <template>
+  <v-parallax src="static/img/santiagopic.jpg">
   <v-container>
     <v-layout>
       <v-flex xs12 sm6 offset-sm3>
@@ -31,7 +32,7 @@
                 <v-layout row>
                   <v-flex xs12>
                     <v-btn
-                      class="indigo darken-1"
+                      class="primary"
                       flat
                       @click="login">
                       Login
@@ -45,6 +46,7 @@
       </v-flex>
     </v-layout>
   </v-container>
+  </v-parallax>
 </template>
 
 <script>
