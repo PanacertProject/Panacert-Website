@@ -1,52 +1,47 @@
 <template>
-  <v-parallax src="static/img/santiagopic.jpg">
-  <v-container>
-    <v-layout>
-      <v-flex xs12 sm6 offset-sm3>
-        <v-card>
-          <v-card-text>
-            <v-container>
-              <v-form ref="form">
-                <div class="error" v-html="error"/>
-                <br>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-text-field
-                      label="E-mail"
-                      v-model="email"
-                      type="email"
-                      :rules="emailRules"
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-text-field
-                      label="Password"
-                      v-model="password"
-                      type="password"
-                      :rules="passwordRules"
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-btn
-                      class="primary"
-                      flat
-                      @click="login">
-                      Login
-                    </v-btn>
-                  </v-flex>
-                </v-layout>
-              </v-form>
-            </v-container>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-container>
-  </v-parallax>
+  <v-app class="bg">
+    <v-content>
+      <v-container fluid fill-height>
+        <v-layout align-center justify-center>
+          <v-flex xs12 sm8 md4>
+            <v-card class="elevation-12">
+              <v-toolbar flat dark color="primary">
+                <v-toolbar-title>Login</v-toolbar-title>
+              </v-toolbar>
+              <v-card-text>
+                <v-form>
+                  <div class="error" v-html="error"/>
+                  <v-text-field
+                    prepend-icon="email"
+                    label="E-mail"
+                    v-model="email"
+                    type="email"
+                    :rules="emailRules">
+                  </v-text-field>
+                  <v-text-field
+                    prepend-icon="lock"
+                    label="Password"
+                    v-model="password"
+                    type="password"
+                    :rules="passwordRules">
+                  </v-text-field>
+                </v-form>
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  flat
+                  class="primary"
+                  @click="login">
+                  Login
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -91,4 +86,12 @@ export default {
 .error {
   color: red
 }
+.bg {
+  background-image: url('../../static/img/santiagopic.jpg');
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 </style>
