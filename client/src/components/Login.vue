@@ -1,52 +1,53 @@
 <template>
-  <v-parallax src="static/img/santiagopic.jpg">
-  <v-container>
-    <v-layout>
-      <v-flex xs12 sm6 offset-sm3>
-        <v-card>
-          <v-card-text>
-            <v-container>
-              <v-form ref="form">
-                <div class="error" v-html="error"/>
-                <br>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-text-field
-                      label="E-mail"
-                      v-model="email"
-                      type="email"
-                      :rules="emailRules"
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-text-field
-                      label="Password"
-                      v-model="password"
-                      type="password"
-                      :rules="passwordRules"
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
-                    <v-btn
-                      class="primary"
-                      flat
-                      @click="login">
-                      Login
-                    </v-btn>
-                  </v-flex>
-                </v-layout>
-              </v-form>
-            </v-container>
-          </v-card-text>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-container>
-  </v-parallax>
+  <div class="bg">
+    <v-container class="login-container">
+      <v-layout>
+        <v-flex xs12 sm6 offset-sm3>
+          <v-card>
+            <v-card-text>
+              <v-container>
+                <v-form ref="form">
+                  <header class="login-header secondary--text">Log In</header>
+                  <div class="error" v-html="error"/>
+                  <br>
+                  <v-layout row>
+                    <v-flex xs12>
+                      <v-text-field
+                        label="E-mail"
+                        v-model="email"
+                        type="email"
+                        :rules="emailRules"
+                      ></v-text-field>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout row>
+                    <v-flex xs12>
+                      <v-text-field
+                        label="Password"
+                        v-model="password"
+                        type="password"
+                        :rules="passwordRules"
+                      ></v-text-field>
+                    </v-flex>
+                  </v-layout>
+                  <v-layout row>
+                    <v-flex xs12>
+                      <v-btn
+                        class="primary"
+                        flat
+                        @click="login">
+                        Login
+                      </v-btn>
+                    </v-flex>
+                  </v-layout>
+                </v-form>
+              </v-container>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -91,4 +92,23 @@ export default {
 .error {
   color: red
 }
+.bg {
+  background-image: url('../../static/img/santiagopic.jpg');
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  margin: auto;
+}
+
+.login-header {
+  font-size: x-large;
+}
+
 </style>
