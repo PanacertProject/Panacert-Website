@@ -49,67 +49,6 @@
       </v-container>
     </v-content>
   </v-app>
-  <!-- <div class="bg">
-    <v-container class="register-container">
-      <v-layout>
-        <v-flex xs12 sm6 offset-sm3>
-          <v-card>
-            <v-card-text>
-              <v-container>
-                <header class="register-header">Register</header>
-                <v-form
-                  ref="form"
-                  autocomplete="off">
-                  <div class="error" v-html="error"/>
-                  <br>
-                  <v-layout row>
-                    <v-flex xs12>
-                      <v-text-field
-                        label="E-mail"
-                        v-model="email"
-                        type="email"
-                        :rules="emailRules"
-                      ></v-text-field>
-                    </v-flex>
-                  </v-layout>
-                  <v-layout row>
-                    <v-flex xs12>
-                      <v-text-field
-                        label="Password"
-                        v-model="password"
-                        type="password"
-                        :rules="passwordRules"
-                      ></v-text-field>
-                    </v-flex>
-                  </v-layout>
-                  <v-layout row>
-                    <v-flex xs12>
-                      <v-text-field
-                        label="Confirm Password"
-                        v-model="ConfirmPassword"
-                        type="password"
-                        :rules="[comparePasswords]"
-                      ></v-text-field>
-                    </v-flex>
-                  </v-layout>
-                  <v-layout row>
-                    <v-flex xs12>
-                      <v-btn
-                        class="primary"
-                        flat
-                        @click="register">
-                        Register
-                      </v-btn>
-                    </v-flex>
-                  </v-layout>
-                </v-form>
-              </v-container>
-            </v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div> -->
 </template>
 
 <script>
@@ -159,7 +98,6 @@ export default {
 .error {
   color: red
 }
-
 .bg {
   background-image: url('../../static/img/santiagopic.jpg');
   background-size: 100%;
@@ -167,5 +105,4 @@ export default {
   width: 100%;
   height: 100%;
 }
-
 </style>
