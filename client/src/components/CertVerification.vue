@@ -12,12 +12,6 @@
       </v-container>
     </v-content>
   </v-app>
-  <!-- <div>
-    <div class="verifier">
-    <h2>Verify Your Certificate</h2>
-      <blockcerts-verifier disable-auto-verify display-mode="full" allow-download allow-social-share></blockcerts-verifier>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -32,10 +26,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .bg {
   background-image: url('../../static/img/santiagopic.jpg');
-  background-size: cover;
+  background-size: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
