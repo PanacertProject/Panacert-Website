@@ -9,7 +9,7 @@
                 <v-toolbar-title>Login</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
-                <v-form>
+                <v-form ref="form">
                   <div class="error" v-html="error"/>
                   <v-text-field
                     prepend-icon="email"
