@@ -17,11 +17,6 @@
 <script>
 require('@webcomponents/webcomponentsjs/webcomponents-loader.js')
 require('@blockcerts/blockcerts-verifier/dist/main.js')
-
-export default {
-  data () {
-  }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
