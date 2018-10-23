@@ -23,14 +23,10 @@
                 Verify now
               </v-btn>
           </v-card>
-          <v-card color="transparent" >
-              <br>
-              <v-btn color="transparent" >
-                <img src="static/img/AppleStore.png" height="40">
-              </v-btn>
-              <v-btn color="transparent">
-                <img src="static/img/GooglePlay.png" height="40">
-              </v-btn>
+          <br>
+          <v-card color="transparent" flat>
+            <img src="static/img/AppleStore.png" height="38">
+            <img src="static/img/GooglePlay.png" height="38">
           </v-card>
         </v-layout>
       </v-parallax>
@@ -159,7 +155,7 @@
                     <v-icon class="primary--text">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>john@panacea.com</v-list-tile-title>
+                    <v-list-tile-title>bob@panacert.com</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
