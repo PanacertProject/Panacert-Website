@@ -6,7 +6,7 @@
           <v-flex xs12 sm8 md4>
             <h2 class="verify-header">Verify Your Certificate</h2>
             <v-spacer></v-spacer>
-            <blockcerts-verifier disable-auto-verify display-mode="full" allow-download allow-social-share></blockcerts-verifier>
+            <blockcerts-verifier disable-auto-verify allow-social-share></blockcerts-verifier>
           </v-flex>
         </v-layout>
       </v-container>
@@ -23,7 +23,7 @@ require('@blockcerts/blockcerts-verifier/dist/main.js')
 <style scoped>
 .bg {
   background-image: url('../../static/img/santiagopic.jpg');
-  background-size: 100%;
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;

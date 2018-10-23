@@ -100,7 +100,7 @@ export default {
 }
 .bg {
   background-image: url('../../static/img/santiagopic.jpg');
-  background-size: 100%;
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;

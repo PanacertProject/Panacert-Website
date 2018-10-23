@@ -23,6 +23,15 @@
                 Verify now
               </v-btn>
           </v-card>
+          <v-card color="transparent" >
+              <br>
+              <v-btn color="transparent" >
+                <img src="static/img/AppleStore.png" height="40">
+              </v-btn>
+              <v-btn color="transparent">
+                <img src="static/img/GooglePlay.png" height="40">
+              </v-btn>
+          </v-card>
         </v-layout>
       </v-parallax>
     </section>

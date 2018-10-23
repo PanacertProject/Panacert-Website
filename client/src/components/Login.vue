@@ -72,6 +72,7 @@ export default {
           })
           this.$store.dispatch('setToken', response.data.token)
           this.$store.dispatch('setUser', response.data.user)
+          this.$router.push({name: 'root'})
         } catch (err) {
           this.error = err.response.data.error
         }
@@ -88,7 +89,7 @@ export default {
 }
 .bg {
   background-image: url('../../static/img/santiagopic.jpg');
-  background-size: 100%;
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
