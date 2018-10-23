@@ -9,12 +9,20 @@
           class="white--text">
           <img src="static/img/logo2.png" height="120">
           <div class="subheading mb-3 text-xs-center">Powered by Blockcerts</div>
-          <v-btn
-            class='primary'
-            large
-            @click="navigateTo({ name: 'register' })">
-            Get Started
-          </v-btn>
+          <v-card color="transparent" flat>
+              <v-btn
+                class='primary'
+                large
+                @click="navigateTo({ name: 'register' })">
+                Get Started
+              </v-btn>
+              <v-btn
+                class='secondary'
+                large
+                @click="navigateTo({ name: 'verifycerts' })">
+                Verify now
+              </v-btn>
+          </v-card>
         </v-layout>
       </v-parallax>
     </section>
@@ -45,9 +53,7 @@
                     <div class="headline text-xs-center">Share with Anyone</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                    Share your certificate profile by PANACERT for your applications to work place or benefits, by this way you will avoid those long bureaucratic processes that will cost you a huge amout of money and time in a easier and official way
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -60,9 +66,7 @@
                     <div class="headline">Fast Validation</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                   Validate your academic certificate with your educational institution through PANACER, this you will avoid those long bureaucratic processes that will cost you a huge amout of money and time in a easier and official way
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -75,9 +79,7 @@
                     <div class="headline text-xs-center">Completely Open Sourced</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                  Know about the huge tools with which PANACERT could work in is development with our completly open sourced code, about our collaboration with blockcerts and how does we manage blockchain for yours benefits
                   </v-card-text>
                 </v-card>
               </v-flex>
