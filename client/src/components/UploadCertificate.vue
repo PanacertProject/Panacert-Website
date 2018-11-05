@@ -25,7 +25,7 @@
                     </v-form>
                   </v-card-text>
                   <div class="file-upload-form">
-                          Upload logo:
+                          Upload certificate:
                           <input type="file" @change="previewImage" accept="image/*">
                       </div>
                       <div class="image-preview" v-if="imageData.length > 0">
