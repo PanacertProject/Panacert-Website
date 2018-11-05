@@ -50,10 +50,10 @@
           <v-container grid-list-xl>
             <v-layout row align-center>
 
-              <article class="item">
-              <v-flex xs12 md4 >
+              <p class="item">
+              <v-flex>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text>
                     <v-icon x-large class="primary--text">share</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
@@ -66,12 +66,12 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              </article>
+              </p>
 
-              <article class="item">
-              <v-flex xs12 md4>
+              <p class="item">
+              <v-flex>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text >
                     <v-icon x-large class="primary--text">flash_on</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
@@ -84,25 +84,25 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              </article>
+              </p>
 
-              <article class="item">
-              <v-flex xs12 md4 id="hola">
+              <p class="item">
+              <v-flex>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text>
                     <v-icon x-large class="primary--text">build</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-xs-center">Completely Open Sourced</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text >
                     Know about the huge tools with which PANACERT could work in his development with
                     our completly open sourced code, about our collaboration with Blockcerts and how
                     does we manage Blockchain for yours benefits.
                   </v-card-text>
                 </v-card>
               </v-flex>
-              </article>
+              </p>
 
             </v-layout>
           </v-container>
@@ -205,20 +205,20 @@
   color: #000000;
 }
 .item{
-padding:5px;
-background:#FFF;
-width:200px;
-height:300px;
-margin:0 5px 5px 0;
-float: left;
-box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
-transition:box-shadow 1s, transform 500ms, filter 500ms ease-in-out;
+text-justify: auto;
+text-align: center;
+background:rgb(255, 255, 255);
+width:400px;
+height:350px;
+margin:1px 5px 5px 1px;
+box-shadow: 1px 1px 10px rgba(8, 137, 197, 0.664);
+transition:box-shadow 1s, transform 200ms, filter 500ms ease-in-out;
 }
-article.item:hover{
+p.item:hover{
 transform: scale(1.05);
-box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
 }
-article.blur{
+p.blur{
 filter: blur(3px);
 transform: scale(0.95);
 }
