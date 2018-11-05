@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <section>
-      <v-parallax src="./static/img/santiagopic.jpg" height="600">
+      <v-parallax src="./static/img/nicepic.jpg" height="600" class="ima">
         <v-layout
           column
           align-center
@@ -48,8 +48,10 @@
         </v-flex>
         <v-flex xs12>
           <v-container grid-list-xl>
-            <v-layout row wrap align-center>
-              <v-flex xs12 md4>
+            <v-layout row align-center>
+
+              <article class="item">
+              <v-flex xs12 md4 >
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
                     <v-icon x-large class="primary--text">share</v-icon>
@@ -62,6 +64,9 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
+              </article>
+
+              <article class="item">
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
@@ -75,7 +80,10 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md4>
+              </article>
+
+              <article class="item">
+              <v-flex xs12 md4 id="hola">
                 <v-card class="elevation-0 transparent">
                   <v-card-text class="text-xs-center">
                     <v-icon x-large class="primary--text">build</v-icon>
@@ -88,6 +96,8 @@
                   </v-card-text>
                 </v-card>
               </v-flex>
+              </article>
+
             </v-layout>
           </v-container>
         </v-flex>
@@ -177,16 +187,33 @@
   </v-content>
 </template>
 
-<script>
-export default {
-  methods: {
-    navigateTo (route) {
-      this.$router.push(route)
-    }
-  }
-}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.nombresclase {
+  color: #FFFFFF;
+}
+.nombreclase .otraclase {
+  color: #444444;
+}
+.otraclase {
+  color: #000000;
+}
+.item{
+padding:5px;
+background:#FFF;
+width:200px;
+height:300px;
+margin:0 5px 5px 0;
+float: left;
+box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+transition:box-shadow 1s, transform 500ms, filter 500ms ease-in-out;
+}
+article.item:hover{
+transform: scale(1.05);
+box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
+article.blur{
+filter: blur(3px);
+transform: scale(0.95);
+}
 </style>
