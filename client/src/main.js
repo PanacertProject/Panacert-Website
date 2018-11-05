@@ -13,12 +13,7 @@ Vue.config.productionTip = false
 Vue.use(Vuetify, {
   theme: {
     'primary': '#FFBF00',
-    'secondary': '#2D8189',
-    'accent': '#82B1FF',
-    'error': '#FF5252',
-    'info': '#2196F3',
-    'success': '#4CAF50',
-    'warning': '#FFC107'
+    'secondary': '#2D8189'
   }
 })
 
