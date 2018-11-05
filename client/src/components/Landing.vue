@@ -42,7 +42,7 @@
           <div class="text-xs-center">
             <h2 class="headline">The best way to prove you're certified</h2>
             <span class="subheading">
-              Cras facilisis mi vitae nunc
+              Never be easier
             </span>
           </div>
         </v-flex>
@@ -60,7 +60,9 @@
                     <div class="headline text-xs-center">Share with Anyone</div>
                   </v-card-title>
                   <v-card-text>
-                    Share your certificate profile by PANACERT for your applications to work place or benefits, by this way you will avoid those long bureaucratic processes that will cost you a huge amout of money and time in a easier and official way
+                    Share your certificate profile by PANACERT for your applications to work place
+                    or benefits, this you will manage your certificates wherever you want in a safer
+                    and faster way
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -76,7 +78,9 @@
                     <div class="headline">Fast Validation</div>
                   </v-card-title>
                   <v-card-text>
-                   Validate your academic certificate with your educational institution through PANACER, this you will avoid those long bureaucratic processes that will cost you a huge amout of money and time in a easier and official way
+                    Validate your academic certificate with your educational institution through PANACER,
+                    this you will avoid those long bureaucratic processes that will cost you a huge amout
+                    of money and time in a easier and official way
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -92,7 +96,9 @@
                     <div class="headline text-xs-center">Completely Open Sourced</div>
                   </v-card-title>
                   <v-card-text>
-                  Know about the huge tools with which PANACERT could work in is development with our completly open sourced code, about our collaboration with blockcerts and how does we manage blockchain for yours benefits
+                    Know about the huge tools with which PANACERT could work in his development with
+                    our completly open sourced code, about our collaboration with Blockcerts and how
+                    does we manage Blockchain for yours benefits.
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -129,9 +135,8 @@
                 <div class="headline">Company info</div>
               </v-card-title>
               <v-card-text>
-                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                PANACERT is a proyect of PANACEA group wich are every day developing tools
+                for your benefits. We work to make the world saffer, easier and better.
               </v-card-text>
             </v-card>
           </v-flex>
@@ -141,7 +146,8 @@
                 <div class="headline">Contact us</div>
               </v-card-title>
               <v-card-text>
-                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                If you want to know more about how does it work PANACERT, upcoming product
+                or send us feedback about the features of the app just write us.
               </v-card-text>
               <v-list class="transparent">
                 <v-list-tile>
@@ -149,7 +155,7 @@
                     <v-icon class="primary--text">phone</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>777-867-5309</v-list-tile-title>
+                    <v-list-tile-title>+56 9 1234 5678</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
                 <v-list-tile>
@@ -157,7 +163,7 @@
                     <v-icon class="primary--text">place</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>Chicago, US</v-list-tile-title>
+                    <v-list-tile-title>Santiago, CH</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
                 <v-list-tile>
@@ -165,7 +171,7 @@
                     <v-icon class="primary--text">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>bob@panacert.com</v-list-tile-title>
+                    <v-list-tile-title>contact@panacert.com</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
@@ -179,7 +185,7 @@
       <v-layout row wrap align-center>
         <v-flex xs12>
           <div class="white--text ml-3">
-            Panacea Project 2018
+            @Panacea Project - 2018
           </div>
         </v-flex>
       </v-layout>
