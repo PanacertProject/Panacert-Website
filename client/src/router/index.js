@@ -4,7 +4,7 @@ import Landing from '@/components/Landing'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import CertVerification from '@/components/CertVerification'
-import UploadCertificate from '@/components/UploadCertificate'
+import CreateTemplate from '@/components/CreateTemplate'
 Vue.use(Router)
 
 export default new Router({
@@ -30,9 +30,9 @@ export default new Router({
       component: CertVerification
     },
     {
-      path: '/certificates/upload',
-      name: 'uploadCertificate',
-      component: UploadCertificate
+      path: '/certificates/template/new',
+      name: 'CreateTemplate',
+      component: CreateTemplate
     }
   ]
 })
