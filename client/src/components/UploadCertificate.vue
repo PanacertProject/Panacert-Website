@@ -14,27 +14,23 @@
                       <div class="error" v-html="error"/>
                       <v-text-field label="University" v-model="message" type="university">
                       </v-text-field>
+                      <v-text-field label="Certificate Name" v-model="message" type="certificate">
+                      </v-text-field>
+                      <v-text-field label="Year" v-model="message" type="year">
+                      </v-text-field>
+                      <v-text-field label="Distinction" v-model="message" type="distinction">
+                      </v-text-field>
+                      <v-text-field label="Identification Badge" v-model="message" type="badge">
+                      </v-text-field>
                     </v-form>
                   </v-card-text>
-                      <div class="file-upload-form">
+                  <div class="file-upload-form">
                           Upload logo:
                           <input type="file" @change="previewImage" accept="image/*">
                       </div>
                       <div class="image-preview" v-if="imageData.length > 0">
                           <img class="preview" :src="imageData">
                       </div>
-                  <v-card-text>
-                    <v-form ref="form">
-                      <v-text-field label="Certificate Name" v-model="message" type="certificate">
-                      </v-text-field>
-                      <v-text-field label="Year" v-model="message" type="year">
-                      </v-text-field>
-                      <v-text-field label="Certificate's Sign" v-model="message" type="sign">
-                      </v-text-field>
-                      <v-text-field label="Distinction" v-model="message" type="distinction">
-                      </v-text-field>
-                    </v-form>
-                  </v-card-text>
                   <v-card-actions>
                     <v-spacer></v-spacer>
                     <v-btn flat class="primary">Enter</v-btn>
@@ -82,7 +78,7 @@ export default {
   color: red
 }
 .bg {
-  background-image: url('../../static/img/puppies2.jpg');
+  background-image: url('../../static/img/puppie.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
