@@ -208,14 +208,14 @@
   </v-content>
 </template>
 
-<script>	
-export default {	
-  methods: {	
-    navigateTo (route) {	
-      this.$router.push(route)	
-    }	
-  }	
-}	
+<script>
+export default {
+  methods: {
+    navigateTo (route) {
+      this.$router.push(route)
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
