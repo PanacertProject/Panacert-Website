@@ -12,33 +12,34 @@
                   <v-card-text>
                     <v-form ref="form">
                       <div class="error" v-html="error"/>
-                      <v-text-field label="University" v-model="message" type="university">
+                      <v-text-field
+                        label="Issuer Name"
+                        v-model="issuerName">
                       </v-text-field>
+                      <div class="file-upload-form">
+                        Upload Issuer Logo:
+                        <input type="file" @change="previewLogo" accept="image/*">
+                      </div>
+                      <div class="image-preview" v-if="logoImage.length > 0">
+                        <img class="preview" :src="logoImage">
+                      </div>
+                      <v-text-field
+                        label="Certificate Name"
+                        v-model="certificateName">
+                      </v-text-field>
+                      <v-text-field
+                        label="Description"
+                        v-model="certificateDescription">
+                      </v-text-field>
+                      <div class="file-upload-form margin-2">
+                        Upload Signature Image:
+                        <input type="file" @change="previewSignature" accept="image/*">
+                      </div>
+                      <div class="image-preview" v-if="logoImage.length > 0">
+                        <img class="preview" :src="signatureImage">
+                      </div>
                     </v-form>
                   </v-card-text>
-                   <div class="file-upload-form">
-                    Upload logo:
-                    <input type="file" @change="previewLogo" accept="image/*">
-                  </div>
-                  <div class="image-preview" v-if="imageLogo.length > 0">
-                    <img class="preview" :src="imageLogo">
-                  </div>
-                  <v-card-text>
-                    <v-form ref="form">
-                      <v-text-field label="Certificate Name" v-model="message" type="certificate">
-                      </v-text-field>
-                      <v-text-field label="Description" v-model="message" type="distinction">
-                      </v-text-field>
-                    </v-form>
-                  </v-card-text>
-                  <div class="file-upload-form">
-                    Upload certificate:
-                    <input type="file" @change="previewCertificate" accept="image/*">
-                  </div>
-                  <div class="file-upload-form margin-2">
-                    Upload Sign:
-                    <input type="file" @change="previewSign" accept="image/*">
-                  </div>
                   <v-card-actions>
                     <v-spacer></v-spacer>
                     <v-btn flat class="primary">Enter</v-btn>
@@ -55,9 +56,11 @@
 <script>
 export default {
   data: () => ({
-    imageLogo: '',
-    imageCertificate: '',
-    imageSign: ''
+    logoImage: '',
+    signatureImage: '',
+    issuerName: '',
+    certificateName: '',
+    certificateDescription: ''
   }),
   methods: {
     previewLogo: function (event) {
@@ -65,27 +68,17 @@ export default {
       if (input.files && input.files[0]) {
         var reader = new FileReader()
         reader.onload = (e) => {
-          this.imageLogo = e.target.result
+          this.logoImage = e.target.result
         }
         reader.readAsDataURL(input.files[0])
       }
     },
-    previewCertificate: function (event) {
+    previewSignature: function (event) {
       var input = event.target
       if (input.files && input.files[0]) {
         var reader = new FileReader()
         reader.onload = (e) => {
-          this.imageCertificate = e.target.result
-        }
-        reader.readAsDataURL(input.files[0])
-      }
-    },
-    previewSign: function (event) {
-      var input = event.target
-      if (input.files && input.files[0]) {
-        var reader = new FileReader()
-        reader.onload = (e) => {
-          this.imageSign = e.target.result
+          this.signatureImage = e.target.result
         }
         reader.readAsDataURL(input.files[0])
       }
