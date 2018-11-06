@@ -57,10 +57,10 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="white--text">share</v-icon>
+                    <v-icon x-large class="white--text">card_travel</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline text-xs-center">Share with Anyone</div>
+                    <div class="headline text-xs-center">Company</div>
                   </v-card-title>
                   <v-card-text class="white--text">
                     Share your certificate profile by PANACERT for your applications to work place
@@ -75,10 +75,10 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text >
-                    <v-icon x-large class="white--text">flash_on</v-icon>
+                    <v-icon x-large class="white--text">account_balance</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline">Fast Validation</div>
+                    <div class="headline">University</div>
                   </v-card-title>
                   <v-card-text class="white--text">
                     Validate your academic certificate with your educational institution through PANACER,
@@ -93,10 +93,10 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="white--text">build</v-icon>
+                    <v-icon x-large class="white--text">accessibility_new</v-icon>
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline text-xs-center">Completely Open Sourced</div>
+                    <div class="headline text-xs-center">Person</div>
                   </v-card-title>
                   <v-card-text class="white--text">
                     Know about the huge tools with which PANACERT could work in his development with
@@ -195,7 +195,7 @@
         </v-layout>
       </v-container>
     </section>
-
+    
     <v-footer class="primary darken-1">
       <v-layout row wrap align-center>
         <v-flex xs12>

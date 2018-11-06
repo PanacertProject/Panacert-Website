@@ -100,7 +100,7 @@ export default {
   color: red
 }
 .bg {
-  background-image: url('../../static/img/puppies.jpg');
+  background-image: url('../../static/img/parapag.png');
   background-size: cover;
   position: absolute;
   width: 100%;
