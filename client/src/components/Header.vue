@@ -4,7 +4,7 @@
       <span
       class="home"
       @click="navigateTo({name: 'root'})">
-      <img src="static/img/logo.png" height="35">
+      <img src="static/img/logosolo.png" height="35">
       </span>
     </v-toolbar-title>
     <!-- <v-toolbar-items>

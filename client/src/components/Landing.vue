@@ -1,13 +1,15 @@
 <template>
   <v-content>
     <section>
-      <v-parallax src="./static/img/nicepic.jpg" height="600" class="ima">
+      <v-parallax src="./static/img/santiagopic.jpg" height="600" class="ima">
         <v-layout
           column
           align-center
           justify-center
           class="white--text">
-          <img src="static/img/logo2.png" height="120">
+          <br>
+          <br>
+          <img src="static/img/logo2.png" height="240">
           <div class="subheading mb-3 text-xs-center">Powered by Blockcerts</div>
           <v-card color="transparent" flat>
               <v-btn
@@ -45,6 +47,7 @@
               Never be easier
             </span>
           </div>
+          <br>
         </v-flex>
         <v-flex xs12>
           <v-container grid-list-xl>
@@ -54,12 +57,12 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="primary--text">share</v-icon>
+                    <v-icon x-large class="white--text">share</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="layout justify-center white--text">
                     <div class="headline text-xs-center">Share with Anyone</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="white--text">
                     Share your certificate profile by PANACERT for your applications to work place
                     or benefits, this you will manage your certificates wherever you want in a safer
                     and faster way
@@ -72,12 +75,12 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text >
-                    <v-icon x-large class="primary--text">flash_on</v-icon>
+                    <v-icon x-large class="white--text">flash_on</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="layout justify-center white--text">
                     <div class="headline">Fast Validation</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="white--text">
                     Validate your academic certificate with your educational institution through PANACER,
                     this you will avoid those long bureaucratic processes that will cost you a huge amout
                     of money and time in a easier and official way
@@ -90,12 +93,12 @@
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="primary--text">build</v-icon>
+                    <v-icon x-large class="white--text">build</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center">
+                  <v-card-title primary-title class="layout justify-center white--text">
                     <div class="headline text-xs-center">Completely Open Sourced</div>
                   </v-card-title>
-                  <v-card-text >
+                  <v-card-text class="white--text">
                     Know about the huge tools with which PANACERT could work in his development with
                     our completly open sourced code, about our collaboration with Blockcerts and how
                     does we manage Blockchain for yours benefits.
@@ -124,6 +127,18 @@
           </v-btn>
         </v-layout>
       </v-parallax>
+      <br>
+    </section>
+
+    <section>
+      <v-layout column align-center justify-center color="white">
+          <br>
+          <br>
+          <iframe width="952" height="535.5" src="https://www.youtube.com/embed/5wAyS1e_hOo"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </v-layout>
+      <br>
     </section>
 
     <section>
@@ -207,15 +222,15 @@
 .item{
 text-justify: auto;
 text-align: center;
-background:rgb(255, 255, 255);
-width:400px;
+background:rgba(5, 134, 156, 0.801);
+width:380px;
 height:350px;
 margin:1px 5px 5px 1px;
-box-shadow: 1px 1px 10px rgba(8, 137, 197, 0.664);
-transition:box-shadow 1s, transform 200ms, filter 500ms ease-in-out;
+box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.664);
+transition:box-shadow 1s, transform 300ms, filter 500ms ease-in-out;
 }
 p.item:hover{
-transform: scale(1.05);
+transform: scale(1.1);
 box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
 }
 p.blur{
