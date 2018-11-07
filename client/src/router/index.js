@@ -6,6 +6,8 @@ import Login from '@/components/Login'
 import CertVerification from '@/components/CertVerification'
 import CreateTemplate from '@/components/CreateTemplate'
 import universidad from '@/components/universidad'
+import empresas from '@/components/empresas'
+import persona from '@/components/persona'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +41,16 @@ export default new Router({
       path: '/certificates/uiversidad',
       name: 'universidad',
       component: universidad
+    },
+    {
+      path: '/certificates/empresas',
+      name: 'empresas',
+      component: empresas
+    },
+    {
+      path: '/certificates/persona',
+      name: 'persona',
+      component: persona
     }
   ]
 })

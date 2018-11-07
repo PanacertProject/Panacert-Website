@@ -15,7 +15,7 @@
               <v-btn
                 class ="white--text"
                 id = "boton"
-                style='width:160px; 
+                style='width:160px;
                 height:60px'
                 @click="navigateTo({ name: 'register' })">
                 Get Started
@@ -23,7 +23,7 @@
               <v-btn
                 class ="white--text"
                 id = "boton"
-                style='width:160px; 
+                style='width:160px;
                 height:60px'
                 @click="navigateTo({ name: 'verifycerts' })">
                 Verify now
@@ -71,7 +71,7 @@
                     or benefits, this you will manage your certificates wherever you want in a safer
                     and faster way
                   </v-card-text>
-                  <v-btn class='black--text' id="boton2" large @click="navigateTo({ name: 'register' })">See more</v-btn>
+                  <v-btn class='black--text' id="boton2" large @click="navigateTo({ name: 'empresas' })">See more</v-btn>
                 </v-card>
               </v-flex>
               </p>
@@ -109,7 +109,7 @@
                     our completly open sourced code, about our collaboration with Blockcerts and how
                     does we manage Blockchain for yours benefits.
                   </v-card-text>
-                  <v-btn class='black-text' id="boton2" large @click="navigateTo({ name: 'register' })">See more</v-btn>
+                  <v-btn class='black-text' id="boton2" large @click="navigateTo({ name: 'persona' })">See more</v-btn>
                 </v-card>
               </v-flex>
               </p>
@@ -205,7 +205,6 @@
         </v-layout>
       </v-container>
     </section>
-    
     <v-footer class="primary darken-1">
       <v-layout row wrap align-center>
         <v-flex xs12>
@@ -243,7 +242,6 @@ export default {
    border-color: rgb(4, 196, 255);
    opacity: 1
 }
-
 #boxes{
    border: 2px solid ;
    border-color: rgb(4, 196, 255);
@@ -280,7 +278,6 @@ p.blur{
 filter: blur(3px);
 transform: scale(0.95);
 }
-
 .banner{
   background-size: 100%;
   animation-name: banner;
@@ -298,12 +295,5 @@ transform: scale(0.95);
   70%, 100% {
     background-image: url(/static/img/nicepic.jpg);
   }
-
 }
-
-
-
-
-
-
 </style>
