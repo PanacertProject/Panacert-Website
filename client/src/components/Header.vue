@@ -1,10 +1,10 @@
 <template>
-  <v-toolbar fixed class="mainheader" >
+  <v-toolbar class="mainheader" id="template1" height="80">
     <v-toolbar-title class="mr-4">
       <span
       class="home"
       @click="navigateTo({name: 'root'})">
-      <img src="static/img/logosolo.png" height="35">
+      <img src="static/img/logosolo.png" height="50">
       </span>
     </v-toolbar-title>
     <!-- <v-toolbar-items>
@@ -52,6 +52,10 @@ export default {
 </script>
 
 <style scoped>
+#template1{
+  background-color: rgb(255, 255, 255)
+  
+}
 .mainheader {
   color: blue
 }

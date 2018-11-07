@@ -13,7 +13,9 @@ Vue.config.productionTip = false
 Vue.use(Vuetify, {
   theme: {
     'primary': '#2A9BB9',
-    'secondary': '#2D8189'
+    'secondary': '#2D8189',
+    'tertiary': '#2ECCFA',
+    'principal': '#01A9DB'
   }
 })
 

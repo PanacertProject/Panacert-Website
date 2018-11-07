@@ -1,7 +1,7 @@
 <template>
-  <v-content>
+  <v-content id="template2">
     <section>
-      <v-parallax src="./static/img/santiagopic.jpg" height="600" class="ima">
+      <v-parallax class="banner" height="600">
         <v-layout
           column
           align-center
@@ -13,14 +13,18 @@
           <div class="subheading mb-3 text-xs-center">Powered by Blockcerts</div>
           <v-card color="transparent" flat>
               <v-btn
-                class='primary'
-                large
+                class ="white--text"
+                id = "boton"
+                style='width:160px; 
+                height:60px'
                 @click="navigateTo({ name: 'register' })">
                 Get Started
               </v-btn>
               <v-btn
-                class='secondary'
-                large
+                class ="white--text"
+                id = "boton"
+                style='width:160px; 
+                height:60px'
                 @click="navigateTo({ name: 'verifycerts' })">
                 Verify now
               </v-btn>
@@ -53,56 +57,59 @@
           <v-container grid-list-xl>
             <v-layout row align-center>
 
-              <p class="item">
+              <p class="item" id="boxes">
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="white--text">card_travel</v-icon>
+                    <v-icon x-large class="black--text">card_travel</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline text-xs-center">Company</div>
+                  <v-card-title primary-title class="layout justify-center black--text">
+                    <div class="headline text-xs-center">COMPANY</div>
                   </v-card-title>
-                  <v-card-text class="white--text">
+                  <v-card-text class="black--text">
                     Share your certificate profile by PANACERT for your applications to work place
                     or benefits, this you will manage your certificates wherever you want in a safer
                     and faster way
                   </v-card-text>
+                  <v-btn class='black--text' id="boton2" large @click="navigateTo({ name: 'register' })">See more</v-btn>
                 </v-card>
               </v-flex>
               </p>
 
-              <p class="item">
+              <p class="item" id="boxes">
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text >
-                    <v-icon x-large class="white--text">account_balance</v-icon>
+                    <v-icon x-large class="black--text">account_balance</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline">University</div>
+                  <v-card-title primary-title class="layout justify-center black--text">
+                    <div class="headline">UNIVERSITY</div>
                   </v-card-title>
-                  <v-card-text class="white--text">
+                  <v-card-text class="black--text">
                     Validate your academic certificate with your educational institution through PANACER,
                     this you will avoid those long bureaucratic processes that will cost you a huge amout
                     of money and time in a easier and official way
                   </v-card-text>
+                  <v-btn class='black--text' id="boton2"  large @click="navigateTo({ name: 'universidad' })">See more</v-btn>
                 </v-card>
               </v-flex>
               </p>
 
-              <p class="item">
+              <p class="item" id="boxes">
               <v-flex>
                 <v-card class="elevation-0 transparent">
                   <v-card-text>
-                    <v-icon x-large class="white--text">accessibility_new</v-icon>
+                    <v-icon x-large class="black--text">accessibility_new</v-icon>
                   </v-card-text>
-                  <v-card-title primary-title class="layout justify-center white--text">
-                    <div class="headline text-xs-center">Person</div>
+                  <v-card-title primary-title class="layout justify-center black--text">
+                    <div class="headline text-xs-center">PERSON</div>
                   </v-card-title>
-                  <v-card-text class="white--text">
+                  <v-card-text class="black--text">
                     Know about the huge tools with which PANACERT could work in his development with
                     our completly open sourced code, about our collaboration with Blockcerts and how
                     does we manage Blockchain for yours benefits.
                   </v-card-text>
+                  <v-btn class='black-text' id="boton2" large @click="navigateTo({ name: 'register' })">See more</v-btn>
                 </v-card>
               </v-flex>
               </p>
@@ -119,7 +126,8 @@
           <div class="headline white--text mb-3 text-xs-center">Certificate management has never been easier</div>
           <em>Get your digital certificates today</em>
           <v-btn
-            class="primary"
+
+            id="boton"
             dark
             large
             @click="navigateTo({ name: 'register'})">
@@ -128,6 +136,8 @@
         </v-layout>
       </v-parallax>
       <br>
+    </section>
+    <section class="banner">
     </section>
 
     <section>
@@ -220,6 +230,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#boton{
+   border-radius: 30px 30px 30px 30px;
+   border: 2px solid ;
+   border-color: rgb(4, 196, 255);
+   background: rgb(0, 0, 0);
+   opacity: 0.75
+}
+#boton2{
+   border-radius: 30px 30px 30px 30px;
+   border: 2px solid ;
+   border-color: rgb(4, 196, 255);
+   opacity: 1
+}
+
+#boxes{
+   border: 2px solid ;
+   border-color: rgb(4, 196, 255);
+   background: rgb(255, 255, 255);
+   opacity: 0.8
+}
+#template2{
+  background: white;
+}
 .nombresclase {
   color: #FFFFFF;
 }
@@ -233,18 +266,44 @@ export default {
 text-justify: auto;
 text-align: center;
 background:rgba(5, 134, 156, 0.801);
-width:380px;
-height:350px;
+width:320px;
+height:400px;
 margin:1px 5px 5px 1px;
 box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.664);
-transition:box-shadow 1s, transform 300ms, filter 500ms ease-in-out;
+transition:box-shadow 1s, transform 150ms, filter 500ms ease-in-out;
 }
 p.item:hover{
-transform: scale(1.1);
+transform: scale(1.05);
 box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.6);
 }
 p.blur{
 filter: blur(3px);
 transform: scale(0.95);
 }
+
+.banner{
+  background-size: 100%;
+  animation-name: banner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate
+}
+@keyframes banner {
+  0%, 30% {
+    background-image: url(/static/img/santiagopic.jpg);
+  }
+  34%, 66% {
+    background-image: url(/static/img/parallax1.jpg);
+}
+  70%, 100% {
+    background-image: url(/static/img/nicepic.jpg);
+  }
+
+}
+
+
+
+
+
+
 </style>

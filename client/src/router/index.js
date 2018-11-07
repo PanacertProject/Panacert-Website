@@ -5,6 +5,7 @@ import Register from '@/components/Register'
 import Login from '@/components/Login'
 import CertVerification from '@/components/CertVerification'
 import CreateTemplate from '@/components/CreateTemplate'
+import universidad from '@/components/universidad'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/certificates/template/new',
       name: 'CreateTemplate',
       component: CreateTemplate
+    },
+    {
+      path: '/certificates/uiversidad',
+      name: 'universidad',
+      component: universidad
     }
   ]
 })
