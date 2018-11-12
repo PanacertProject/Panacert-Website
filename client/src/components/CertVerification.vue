@@ -6,7 +6,7 @@
           <v-flex xs12 sm8 md4>
             <h2 class="verify-header">Verify Your Certificate</h2>
             <v-spacer></v-spacer>
-            <blockcerts-verifier disable-auto-verify allow-social-share></blockcerts-verifier>
+            <blockcerts-verifier disable-auto-verify allow-social-share display-mode="full"></blockcerts-verifier>
           </v-flex>
         </v-layout>
       </v-container>

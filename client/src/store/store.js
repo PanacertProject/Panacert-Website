@@ -8,7 +8,8 @@ export default new Vuex.Store({
   state: {
     token: null,
     user: null,
-    isUserLoggedIn: false
+    isUserLoggedIn: false,
+    certificateTemplate: null
   },
   mutations: { // functions that change state
     setToken (state, token) {
@@ -21,6 +22,9 @@ export default new Vuex.Store({
     },
     setUser (state, user) {
       state.user = user
+    },
+    setCertificateTemplate (state, template) {
+      state.certificateTemplate = template
     }
   },
   actions: {
@@ -29,6 +33,9 @@ export default new Vuex.Store({
     },
     setUser ({ commit }, user) {
       commit('setUser', user)
+    },
+    setCertificateTemplate ({ commit }, template) {
+      commit('setCertificateTemplate', template)
     }
   }
 })
