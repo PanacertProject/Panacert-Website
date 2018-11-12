@@ -144,9 +144,9 @@
       <v-layout column align-center justify-center color="white">
           <br>
           <br>
-          <iframe width="952" height="535.5" src="https://www.youtube.com/embed/5wAyS1e_hOo"
+          <!-- <iframe width="952" height="535.5" src="https://www.youtube.com/embed/5wAyS1e_hOo"
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+          allowfullscreen></iframe> -->
       </v-layout>
       <br>
     </section>
