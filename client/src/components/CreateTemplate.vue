@@ -105,6 +105,7 @@ export default {
     newTemplate: function () {
       var template = bcTools.generateTemplate(this.config)
       this.$store.dispatch('setCertificateTemplate', template)
+      this.$router.push({ name: 'CreateCertificates' })
     }
   }
 }
