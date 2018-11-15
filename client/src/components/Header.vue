@@ -1,10 +1,17 @@
 <template>
-  <v-toolbar class="mainheader" id="template1" height="80">
-    <v-toolbar-title class="mr-4">
+  <v-toolbar
+    :class="{transparent: !showNavbar, 'fade-enter-active': showNavbar}"
+    height="80"
+    flat
+    fixed>
+    <v-toolbar-title
+      class="mr-4">
       <span
-      class="home"
-      @click="navigateTo({name: 'root'})">
-      <img src="static/img/logosolo.png" height="50">
+        class="home"
+        @click="navigateTo({name: 'root'})">
+      <img
+        src="static/img/logosolo.png"
+        height="50">
       </span>
     </v-toolbar-title>
     <!-- <v-toolbar-items>
@@ -15,19 +22,24 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
-      <v-btn flat
-      v-if="!$store.state.isUserLoggedIn"
-      @click="navigateTo({name: 'login'})">
+      <v-btn
+        flat
+        v-if="!$store.state.isUserLoggedIn"
+        :class="{'white--text': !showNavbar}"
+        @click="navigateTo({name: 'login'})">
         Log In
       </v-btn>
-      <v-btn flat
-      v-if="!$store.state.isUserLoggedIn"
-      @click="navigateTo({name: 'register'})">
+      <v-btn
+        flat
+        v-if="!$store.state.isUserLoggedIn"
+        :class="{'white--text': !showNavbar}"
+        @click="navigateTo({name: 'register'})">
         Sign Up
       </v-btn>
-      <v-btn flat
-      v-if="$store.state.isUserLoggedIn"
-      @click="logout">
+      <v-btn
+        flat
+        v-if="$store.state.isUserLoggedIn"
+        @click="logout">
         Log out
       </v-btn>
     </v-toolbar-items>
@@ -36,6 +48,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      showNavbar: true
+    }
+  },
   methods: {
     navigateTo (route) {
       this.$router.push(route)
@@ -46,23 +63,31 @@ export default {
       this.$router.push({
         name: 'root'
       })
+    },
+    handleScroll (event) {
+      window.pageYOffset > 80 ? this.showNavbar = true : this.showNavbar = false
     }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
 
 <style scoped>
-#template1{
-  background-color: rgb(255, 255, 255)
-}
-.mainheader {
-  color: blue
-}
 .home {
   cursor: pointer;
   vertical-align: bottom;
 }
-.home:hover {
-  color: rgb(59, 235, 191)
+
+.fade-enter-active {
+  transition: all 0.5s;
 }
+.fade-leave-active {
+ transition: all 2s;
+}
+
 </style>
