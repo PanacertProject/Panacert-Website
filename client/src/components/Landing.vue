@@ -294,15 +294,11 @@
 </template>
 
 <script>
-import PageHeader from '@/components/Header.vue'
 export default {
   methods: {
     navigateTo (route) {
       this.$router.push(route)
     }
-  },
-  components: {
-    PageHeader
   }
 }
 

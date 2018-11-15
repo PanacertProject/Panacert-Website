@@ -1,6 +1,6 @@
 <template>
   <v-toolbar
-    :class="{transparent: !showNavbar, 'fade-enter-active': showNavbar}"
+    :class="{transparent: transparentNavbar, 'fade-enter-active': !transparentNavbar}"
     height="80"
     flat
     fixed>
@@ -25,14 +25,14 @@
       <v-btn
         flat
         v-if="!$store.state.isUserLoggedIn"
-        :class="{'white--text': !showNavbar}"
+        :class="{'white--text': transparentNavbar}"
         @click="navigateTo({name: 'login'})">
         Log In
       </v-btn>
       <v-btn
         flat
         v-if="!$store.state.isUserLoggedIn"
-        :class="{'white--text': !showNavbar}"
+        :class="{'white--text': transparentNavbar}"
         @click="navigateTo({name: 'register'})">
         Sign Up
       </v-btn>
@@ -50,7 +50,7 @@
 export default {
   data () {
     return {
-      showNavbar: true
+      transparentNavbar: true
     }
   },
   methods: {
@@ -65,7 +65,7 @@ export default {
       })
     },
     handleScroll (event) {
-      window.pageYOffset > 80 ? this.showNavbar = true : this.showNavbar = false
+      window.pageYOffset > 80 ? this.transparentNavbar = false : this.transparentNavbar = true
     }
   },
   created () {
