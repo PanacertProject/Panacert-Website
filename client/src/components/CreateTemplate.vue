@@ -67,15 +67,15 @@ export default {
       // issuer info
       issuerUrl: 'https://www.issuer.org',
       issuerEmail: 'contact@issuer.org',
-      issuerName: 'Universidad del Centro',
+      issuerName: '',
       issuerId: 'https://raw.githubusercontent.com/PanacertProject/BlockcertExamples/master/issuers/universidad-del-centro/issuer.json',
       revocationList: 'https://raw.githubusercontent.com/PanacertProject/BlockcertExamples/master/issuers/universidad-del-centro/revocation-list.json',
       issuerSignatureLines: [{jobTitle: 'University Issuer', image: '', name: 'Universidad del Centro'}],
       issuerPublicKey: 'Cfd720Ada81563D36E53eF2904F5A9E87fD0a29c',
       issuerImage: '',
       // certificate info
-      certificateTitle: 'Certificate of Accomplishment',
-      certificateDescription: 'Lorem ipsum dolor sit amet, mei docendi concludaturque ad, cu nec partem graece. Est aperiam consetetur cu, expetenda moderatius neglegentur ei nam, suas dolor laudem eam an.',
+      certificateTitle: '',
+      certificateDescription: '',
       criteriaNarrative: 'Nibh iriure ei nam, modo ridens neglegentur mel eu. At his cibo mucius.',
       badgeId: '82a4c9f2-3588-457b-80ea-da645ac1b8cc',
       certImage: ''
