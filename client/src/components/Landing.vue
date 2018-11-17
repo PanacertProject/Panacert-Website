@@ -4,20 +4,26 @@
       <v-responsive
         class="banner"
         :aspect-ratio="3/2"
-        height="1000">
+        max-height="1000"
+        fill-height>
         <v-container
           fill-height>
           <v-layout
-            align-center>
+            justify-center
+            align-center
+            class="my-3">
             <v-flex
-              text-xs-center>
-              <img
-                src="static/img/logo2.png"
-                height="240">
-              <h2
-                class="mb-3 text-xs-center white--text">
-                Verifiable Digital Certificates
-              </h2>
+              xs12
+              sm4>
+              <v-img
+                src="static/img/logo2.png">
+              </v-img>
+              <div>
+                <h2
+                  class="mb-3 text-xs-center white--text">
+                  Verifiable Digital Certificates
+                </h2>
+              </div>
               <v-card
                 class="transparent"
                 flat>
@@ -346,7 +352,7 @@ export default {
   transform: scale(0.95);
 }
 .banner {
-  background-size: 100%;
+  background-size: fill;
   background-image: url(/static/img/nicepic.jpg);
   background-attachment: fixed;
 }
