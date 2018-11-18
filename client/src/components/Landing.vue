@@ -28,13 +28,13 @@
                 class="transparent"
                 flat>
                 <v-btn
-                  class="btn"
+                  class="btn white--text"
                   flat
                   @click="navigateTo({ name: 'register' })">
                   Get Started
                 </v-btn>
                 <v-btn
-                  class="btn"
+                  class="btn white--text"
                   flat
                   @click="navigateTo({ name: 'verifycerts' })">
                   Verify now
@@ -96,7 +96,7 @@
                 in a faster, cheaper and simpler way.
               </v-card-text>
               <v-btn
-                class='btn'
+                class='btn white--text'
                 large
                 flat
                 @click="navigateTo({ name: 'empresas' })">
@@ -128,7 +128,7 @@
                 View our open source code and more.
               </v-card-text>
               <v-btn
-                class="btn"
+                class="btn white--text"
                 large
                 flat
                 @click="navigateTo({ name: 'universidad' })">
@@ -159,7 +159,7 @@
                 allowing you to have your official certificates digitally at your reach anytime, anywhere.
               </v-card-text>
               <v-btn
-                class="btn"
+                class="btn white--text"
                 large
                 flat
                 @click="navigateTo({ name: 'persona' })">
@@ -318,13 +318,10 @@ export default {
   border-color: rgb(4, 196, 255);
   width: 160px;
   height: 60px;
-  color: white;
   background-color: rgb(15, 136, 173);
   /* opacity: 0.75; */
 }
-/* .btn:active {
-  background: transparent;
-} */
+
 .box {
   border: 2px solid ;
   border-color: rgb(4, 196, 255);
